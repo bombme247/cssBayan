@@ -1,8 +1,3 @@
-/* * {
-    margin: 0;
-    padding: 0;
-} */
-
 body {
     margin: 20px auto;
   max-width: 1920px;
@@ -18,20 +13,11 @@ body {
     font-weight: 500;
 }
 
-.hr {
-    height: 1em;
-}
-/* meme_1 */
-
 .meme_acc {
     display: block;
     max-width: 100%;
     cursor: pointer;
 }
-
-/* .meme_acc:hover {
-    color: #b3a396;
-} */
 
 .meme_title {
     display: block;
@@ -51,15 +37,41 @@ body {
     text-align: center;
 }
 
-/* .image {
-    min-height: 0.2em;
-
-} */
-
 .meme_input {
     appearance: none;
 }
 
 .meme_input:checked + .meme_img {
     display: block;
+}
+
+/* --------------------------- Tablet version -------------------------
+
+@media screen and (max-width: 768px) {
+
+    body 
+} */
+
+/* --------------------------- Mobile version ------------------------- */
+
+@media screen and (max-width: 320px) {
+    
+    .body {
+        max-width: 320px;
+    }
+
+    .title {
+        font-size: 2em;
+        font-weight: 500;
+    }
+    
+    .meme_title {
+        font-size: 1em;
+        padding: 0.5%;
+    }
+
+    img {
+   height: 50%;
+   width: 50%;
+}
 }
